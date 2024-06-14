@@ -296,11 +296,15 @@
         <div class="p-2">
             <div>
                 <br>
-                <h2 class="text-6xl" style="color: #00BF63;">Bananas Fountain</h2>
+                <div class="flex justify-center">
+                <img src="title.png" alt="Bananas Fountain" class="w-full h-auto" style="max-width: 60%; height: auto;">
+            </div>
                 <br>
                 <hr>
-            </div> 
+            </div>
+            
         </div> 
+        
         <h6 class="text-center">
             <i style="color: #12859c;" class="ri-alert-line"></i>
             <strong style="color: #12859c;">Disclaimer&nbsp;:&nbsp;</strong> Funds that are deposited cannot be claimed out immediately . Once deposited they will be locked in the contract . 
