@@ -290,46 +290,26 @@
 
 
   
-<div class="border-4 border-[#00BF63] w-full bg-[#000000a3] h-fit rounded-lg">
-    <div class="shadow-lg p-2 border-t-transparent border-t-4 border-l-4 border-l-transparent border-transparent-500  text-[#ff0099] text-center rounded-lg">
-    <div class="p-2">
-        <div>
-            <h2 class="text-1xl">{info.displayName}</h2>
-        </div>
-        <div class="mt-6 space-y-1 text-center">
-            <div class="flex justify-center items-center">
-                <h3>APR:</h3>
-                <div>
-                    {#if apr > 0}
-                        <span>{format.apr(apr)}</span> <span class="cursor-pointer" on:click={()=>showApr = !showApr}>{#if showApr}-{:else}+{/if}</span>
-                    {:else if apr == 0}
-                        <span>0%</span>
-                    {:else}
-                        <div class="animate-spin">.</div>
-                    {/if}
-                </div>
-            </div>
-            {#if showApr}
-                    <div class="p-2 mb-4" transition:slide={{ delay: 250, duration: 300, easing: quintOut, axis: 'y' }}>
-                        <ul class="text-sm md:text-base lg:text-lg xl:text-xl text-center w-full">
-                            <li>Daily: {format.apr(apr / 365)} {#if stakedUSD}<span class="text-green-200" style="font-size: 20px;">({format.usd(((apr / 365) / 100) * stakedUSD)})</span>{/if}</li>
-                            <li>Weekly: {format.apr(apr / 52)} {#if stakedUSD}<span class="text-green-200" style="font-size: 20px;">({format.usd(((apr / 52) / 100) * stakedUSD)})</span>{/if}</li>
-                            <li>Yearly: {format.apr(apr)} {#if stakedUSD}<span class="text-green-200" style="font-size: 20px;">({format.usd((apr / 100) * stakedUSD)})</span>{/if}</li>
-                        </ul>
-                    </div>
-                {/if}
-            <div class="flex justify-center items-center">
-                <h3>TVL:</h3>
-                <div>
-                    {#if tvlUSD > 0}
-                        <span>{format.usd(tvlUSD)}</span>
-                    {:else}
-                        <div class="animate-spin">.</div>
-                    {/if}
-                </div>
-            </div>
-        </div>
-    </div>
+
+<div class="border-2 border-[#00BF63] w-full bg-[#000000a3] h-fit rounded-lg" style="box-shadow: 0 0 30px #00FFFF;">
+    <div class="shadow-lg p-2 border-t-transparent border-t-4 border-l-4 border-l-transparent border-transparent-500 text-[#fff1bc] text-center rounded-lg">
+        <div class="p-2">
+            <div>
+                <br>
+                <h2 class="text-6xl" style="color: #00BF63;">Bananas Fountain</h2>
+                <br>
+                <hr>
+            </div> 
+        </div> 
+        <h6 class="text-center">
+            <i style="color: #12859c;" class="ri-alert-line"></i>
+            <strong style="color: #12859c;">Disclaimer&nbsp;:&nbsp;</strong> Funds that are deposited cannot be claimed out immediately . Once deposited they will be locked in the contract . 
+            You are able to claim them back via the 1% allowed daily to claim, thus allowing you to claim up to 3 times your initial deposit . Click Open to proceed.
+          </h6>
+          <hr/>
+        <br>
+        <br>
+        <br>
     <div class="border-2 border-transparent bg-transparent-500 w-full mt-4 flex justify-center items-center">
         {#if farmOpen}
             <img src="close.png" alt="Close" on:click={() => farmOpen = false} class="max-w-xs rounded-lg h-full cursor-pointer" />
