@@ -85,7 +85,7 @@ for example <img src="{CONNECT_LOGO}" alt="Connect Logo" class="mx-auto h-15 w-a
 
 <Toasts />
 
-<div class="border-4 border-transparent bg-transparent-800 max-w-6xl mx-auto mb-6">
+<div class="border-4 border-transparent bg-transparent-800 max-w-4xl mx-auto mb-6">
 <div class="bg-transparent-700"> 
     <div class="mb-8 text-center">
         <img src="{Prime_LOGO}" class="mx-auto h-108 mb-2" alt="Banner" />   

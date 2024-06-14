@@ -176,14 +176,15 @@
 
 
 
-<div class="grid ">
+<div class=" justify-center items-center min-h-screen">
+    <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
     {#each farms as farm}
         {#if !farm.decomissioned}
             <FarmBox info={farm} on:addToTVL={addToTVL} />
         {/if}
     {/each}
 </div>
-
+</div>
 
     
     
